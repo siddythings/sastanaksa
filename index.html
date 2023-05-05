@@ -26,10 +26,15 @@
 
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+	<script>
+		$(document).ready(function(){       
+   $('#myModal').modal('show');
+    }); 
+	</script>
 </head>
 
 <body>
-    <!-- Topbar Start -->
+    <!-- Topbar Start -->  
     <div class="container-fluid bg-dark py-3">
         <div class="container">
             <div class="row">
@@ -68,6 +73,34 @@
 
 
     <!-- Navbar Start -->
+	<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content" style="margin-top: 250px;">
+			<div class="modal-header">
+				<h5 class="modal-title" id="exampleModalLabel"></h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="modal-body">
+			  <h1 style="text-align: center;">Chat In WhatsApp</h1>
+			</div>
+			<div class="row justify-content-md-center">
+				<div class="col-md-6 col-sm-12">
+					<a href="https://wa.me/919794123878" data-toggle="modal" data-target="#modalEnviarEtiqueta">
+						<div class="card bg-red text-white" style="border-radius: 1rem">
+							<img src="https://i.imgur.com/S3gghb2.png" class="card-img" alt="BannerEnviarEtiqueta" style="border-radius: 1rem">
+						</div>
+				</div>
+				</a>
+			</div>
+			<div class="modal-footer">
+				<!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+				<a href="https://wa.me/917785845447"><button type="button" class="btn btn-primary">Save changes</button></a> -->
+			</div>
+			</div>
+		</div>
+		</div>
     <div class="container-fluid position-relative nav-bar p-0">
         <div class="container position-relative" style="z-index: 9;">
             <nav class="navbar navbar-expand-lg bg-secondary navbar-dark py-3 py-lg-0 pl-3 pl-lg-5">
@@ -312,7 +345,7 @@
                             <img class="img-fluid" src="img/portfolio-1.jpg" alt="">
                         </div>
                         <div class="portfolio-text bg-secondary d-flex flex-column align-items-center justify-content-center">
-                            <h4 class="text-white mb-4">Project Name</h4>
+                            <h4 class="text-white mb-4">Living Room</h4>
                             <div class="d-flex align-items-center justify-content-center">
                                 <a class="btn btn-outline-primary m-1" href="">
                                     <i class="fa fa-link"></i>
@@ -330,7 +363,7 @@
                             <img class="img-fluid" src="img/portfolio-2.jpg" alt="">
                         </div>
                         <div class="portfolio-text bg-secondary d-flex flex-column align-items-center justify-content-center">
-                            <h4 class="text-white mb-4">Project Name</h4>
+                            <h4 class="text-white mb-4">Bed room</h4>
                             <div class="d-flex align-items-center justify-content-center">
                                 <a class="btn btn-outline-primary m-1" href="">
                                     <i class="fa fa-link"></i>
@@ -348,7 +381,7 @@
                             <img class="img-fluid" src="img/portfolio-3.jpg" alt="">
                         </div>
                         <div class="portfolio-text bg-secondary d-flex flex-column align-items-center justify-content-center">
-                            <h4 class="text-white mb-4">Project Name</h4>
+                            <h4 class="text-white mb-4">Dining Area</h4>
                             <div class="d-flex align-items-center justify-content-center">
                                 <a class="btn btn-outline-primary m-1" href="">
                                     <i class="fa fa-link"></i>
@@ -366,7 +399,7 @@
                             <img class="img-fluid" src="img/portfolio-4.jpg" alt="">
                         </div>
                         <div class="portfolio-text bg-secondary d-flex flex-column align-items-center justify-content-center">
-                            <h4 class="text-white mb-4">Project Name</h4>
+                            <h4 class="text-white mb-4">Kitchen Designing</h4>
                             <div class="d-flex align-items-center justify-content-center">
                                 <a class="btn btn-outline-primary m-1" href="">
                                     <i class="fa fa-link"></i>
@@ -384,7 +417,7 @@
                             <img class="img-fluid" src="img/portfolio-5.jpg" alt="">
                         </div>
                         <div class="portfolio-text bg-secondary d-flex flex-column align-items-center justify-content-center">
-                            <h4 class="text-white mb-4">Project Name</h4>
+                            <h4 class="text-white mb-4">Full House Interior</h4>
                             <div class="d-flex align-items-center justify-content-center">
                                 <a class="btn btn-outline-primary m-1" href="">
                                     <i class="fa fa-link"></i>
@@ -402,7 +435,7 @@
                             <img class="img-fluid" src="img/portfolio-6.jpg" alt="">
                         </div>
                         <div class="portfolio-text bg-secondary d-flex flex-column align-items-center justify-content-center">
-                            <h4 class="text-white mb-4">Project Name</h4>
+                            <h4 class="text-white mb-4">Full House Exterior</h4>
                             <div class="d-flex align-items-center justify-content-center">
                                 <a class="btn btn-outline-primary m-1" href="">
                                     <i class="fa fa-link"></i>
@@ -509,20 +542,20 @@
                                 <img class="img-fluid rounded-circle" src="img/testimonial-1.jpg" style="width: 60px; height: 60px;" alt="">
                                 <div class="ml-3">
                                     <h5>Client Name</h5>
-                                    <i>Profession</i>
+                                    <i>Sarah D.</i>
                                 </div>
                             </div>
-                            <p>Tempor at diam tempor sed. Sanctus dolor ipsum ut nonumy amet clita sea. Sed eos sed dolores vero no. Ipsum elitr elitr stet dolor  lorem erat. Diam no amet sea justo vero ut. Dolor ipsum kasd ipsum dolore.</p>
+                            <p>Working with the team at sastanaksha was an absolute delight. From the initial consultation to the final touches, they made the entire process smooth and stress-free. I couldn't be happier with the end result, my home looks absolutely stunning!</p>
                         </div>
                         <div class="d-flex flex-column">
                             <div class="d-flex align-items-center mb-3">
                                 <img class="img-fluid rounded-circle" src="img/testimonial-2.jpg" style="width: 60px; height: 60px;" alt="">
                                 <div class="ml-3">
                                     <h5>Client Name</h5>
-                                    <i>Profession</i>
+                                    <i>David Clark</i>
                                 </div>
                             </div>
-                            <p class="m-0">Tempor at diam tempor sed. Sanctus dolor ipsum ut nonumy amet clita sea. Sed eos sed dolores vero no. Ipsum elitr elitr stet dolor  lorem erat. Diam no amet sea justo vero ut. Dolor ipsum kasd ipsum dolore.</p>
+                            <p class="m-0">I had the pleasure of working with sastanaksha on a complete home renovation, and I couldn't be happier with the outcome. The team's expertise and passion for design is evident in every detail, and their professionalism and communication throughout the project was exceptional. I highly recommend them to anyone looking for top-notch design services.</p>
                         </div>
                     </div>
                 </div>
@@ -553,14 +586,14 @@
                         <div class="card-body bg-white p-4">
                             <div class="d-flex align-items-center mb-3">
                                 <a class="btn btn-primary" href=""><i class="fa fa-link"></i></a>
-                                <h5 class="m-0 ml-3 text-truncate">Diam amet eos at no eos</h5>
+                                <h5 class="m-0 ml-3 text-truncate">Living Room</h5>
                             </div>
-                            <p>Diam amet eos at no eos sit, amet rebum ipsum clita stet, diam sea est diam eos, sit vero stet justo</p>
-                            <div class="d-flex">
+                            <!-- <p>Diam amet eos at no eos sit, amet rebum ipsum clita stet, diam sea est diam eos, sit vero stet justo</p> -->
+                            <!-- <div class="d-flex">
                                 <small class="mr-3"><i class="fa fa-user text-primary"></i> Admin</small>
                                 <small class="mr-3"><i class="fa fa-folder text-primary"></i> Web Design</small>
                                 <small class="mr-3"><i class="fa fa-comments text-primary"></i> 15</small>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                 </div>
@@ -570,14 +603,14 @@
                         <div class="card-body bg-white p-4">
                             <div class="d-flex align-items-center mb-3">
                                 <a class="btn btn-primary" href=""><i class="fa fa-link"></i></a>
-                                <h5 class="m-0 ml-3 text-truncate">Diam amet eos at no eos</h5>
+                                <h5 class="m-0 ml-3 text-truncate">Dining Area</h5>
                             </div>
-                            <p>Diam amet eos at no eos sit, amet rebum ipsum clita stet, diam sea est diam eos, sit vero stet justo</p>
-                            <div class="d-flex">
+                            <!-- <p>Diam amet eos at no eos sit, amet rebum ipsum clita stet, diam sea est diam eos, sit vero stet justo</p> -->
+                            <!-- <div class="d-flex">
                                 <small class="mr-3"><i class="fa fa-user text-primary"></i> Admin</small>
                                 <small class="mr-3"><i class="fa fa-folder text-primary"></i> Web Design</small>
                                 <small class="mr-3"><i class="fa fa-comments text-primary"></i> 15</small>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                 </div>
@@ -587,14 +620,14 @@
                         <div class="card-body bg-white p-4">
                             <div class="d-flex align-items-center mb-3">
                                 <a class="btn btn-primary" href=""><i class="fa fa-link"></i></a>
-                                <h5 class="m-0 ml-3 text-truncate">Diam amet eos at no eos</h5>
+                                <h5 class="m-0 ml-3 text-truncate">Full House interior and Exterior</h5>
                             </div>
-                            <p>Diam amet eos at no eos sit, amet rebum ipsum clita stet, diam sea est diam eos, sit vero stet justo</p>
-                            <div class="d-flex">
+                            <!-- <p>Diam amet eos at no eos sit, amet rebum ipsum clita stet, diam sea est diam eos, sit vero stet justo</p> -->
+                            <!-- <div class="d-flex">
                                 <small class="mr-3"><i class="fa fa-user text-primary"></i> Admin</small>
                                 <small class="mr-3"><i class="fa fa-folder text-primary"></i> Web Design</small>
                                 <small class="mr-3"><i class="fa fa-comments text-primary"></i> 15</small>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                 </div>
@@ -669,6 +702,40 @@
 
 
     <!-- JavaScript Libraries -->
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    
+	<script>
+		$(document).ready(function(){
+			 $('#exampleModal').modal('show');
+		 }); 
+		 /* instagram.com/nettoquerois */
+$(document).ready(function () {
+	$("#modalEnviarEtiqueta").modal({
+		show: false
+	});
+
+	/* Manipular parametro da URL */
+	const _query = location.search.slice(1);
+	const _parts = _query.split("&");
+	const _data = {};
+
+	_parts.forEach(function (part) {
+		const _keyValue = part.split("=");
+		const _key = _keyValue[0];
+		const _value = _keyValue[1];
+		_data[_key] = _value;
+	});
+	/* Saida em JSON Format - Key : Value */
+	console.log(_data);
+
+	/* Apenas para fins especificos */
+	const _param = _data.editors;
+	$("#pedidoId").prop("href", `www.google.com/${_param}`);
+});
+
+	 </script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
     <script src="lib/easing/easing.min.js"></script>
